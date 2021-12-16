@@ -1,0 +1,83 @@
+.line{
+    height:100px;
+    display: flex;
+    margin-bottom:50px;
+    margin-left:20px;
+    white-space:nowrap;
+}
+h1{
+    width:20px;
+    height:50px;
+    opacity:0.1;
+    &:hover{
+     opacity:1;
+
+        background-color:rgba(95, 91, 91, 0.356)
+    }
+}
+.items{
+    width:200px;
+    height:100px;
+    margin-left: 10px;
+    background-color: green;
+    & img{
+        width:200px;
+        height:100px;    
+        cursor: pointer;
+        
+    }
+  
+    & .iinfos{
+        width:200px;
+        height:100px;
+        background-color: rgb(49, 49, 49);
+        position: relative;
+        top: -4px;
+        opacity:0;
+        
+        &:hover{
+            opacity:1;
+        
+        }
+        & .iinfosicons{
+        width:200px;
+        height:30%;
+       
+        & img{
+            background-color: rgb(197, 196, 196);
+              width:25px;
+                height: 90%;
+                border-radius: 50px;
+                margin: 5px 0 0 5px;
+                border: 2px solid white;
+            }
+            & .arrowdown{
+                position: absolute;  
+                width:25px;
+                height: 26px;
+                right: 10px;
+            }
+        }
+    }
+    &:hover{
+            
+        position: relative;
+        animation:itemshover;
+        animation-duration:0.5s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes itemshover{
+        0%{  top:0px;
+        }
+        100%{ top:-80px;
+            border-radius:15px;
+            transform: scale(1.25);}
+    }
+}
+h5{
+    margin:0;
+    font-weight: 500;
+    margin-left:20px;
+
+    color:white;
+}

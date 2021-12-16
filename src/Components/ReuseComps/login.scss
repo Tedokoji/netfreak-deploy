@@ -1,0 +1,29 @@
+.login-Form{
+   
+    background: linear-gradient(rgb(65, 63, 63),rgb(44, 40, 40));
+    margin: 100px 0 20px 35vw;
+    width:300px;
+    height:400px;
+  
+} 
+.login{
+       margin: 50px;
+       & img{
+           width: 200px;
+           height: 100px;
+       }
+       & button{
+           transform: scale(1.5);
+           margin:70px;
+           color: white; 
+           font-size: 12px;
+           font-family: "Helvetica Neue";
+           text-shadow: 5px 0px 5px black;   
+            background: linear-gradient(rgb(223, 79, 79),rgb(95, 44, 44));
+            border: 0px solid;
+            &:hover{
+                background: rgb(95, 44, 44);
+                cursor: pointer;
+            }
+        }
+    }
