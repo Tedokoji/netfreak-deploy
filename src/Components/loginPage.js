@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import {useNavigate} from 'react-router-dom'
 import './ReuseComps/login.scss'
 import NavBar from './ReuseComps/NavBar';
 import netflix from './ReuseComps/static files/netflix.png'
@@ -7,9 +8,11 @@ const LoginPage = (props) => {
     const [pass,setPass] = useState('')
     const [logininfo,setLogininfo] = useState({})
     const [logged,setLogged] = useState(false)
+    const navi = useNavigate()
     const handleLogin =  () => {
         setLogininfo({name: name,pass: pass})
         setLogged(true);
+        navi('/browse')
     }
     console.log('reender login')
     if(logged){
